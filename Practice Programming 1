@@ -1,0 +1,44 @@
+def sn():
+    student_Number = input('Enter Student Number:')
+    #calls out the new defined function "sn" meaning student number
+    
+    if student_Number[-2] in'00 - 33':
+        print('Fahrenheit to Celsius Conversion')
+        unit = input('Enter Scale:')
+        temp = float(input('Enter the temperature value:'))
+        
+        if unit == 'Fahrenheit':
+            c = (temp - 32)* 5/9
+            print('{F} Fahrenheit: {C} Celsius'.format(F = temp, C = c))
+        else:
+            f = temp*9/5 + 32
+            print('{C} Celsius: {F} Fahrenheit'.format(C = temp, F = f))
+    #end of Fahrenheit to Celsius Conversion
+    
+    elif student_Number[-2] in '34-66':
+        print('Kelvin to Celsius Conversion')
+        unit = input('Enter Scale:')
+        temp = float(input('Enter the temperature value:'))
+            
+        if unit == 'Kelvin':
+            c = temp - 273.15
+            print('{K} Kelvin: {C} Celsius'.format(K = temp, C = c))
+        else:
+            k = temp + 273.15
+            print('{C} Celsius: {K} Kelvin'.format(C = temp, k = k))
+    #end of Kelvin to Celsius Conversion
+    
+    else:
+        print('Fahrenheit to Rankine Conversion')
+        unit = input('Enter Scale:')
+        temp = float(input('Enter the temperature value:'))
+            
+        if unit == 'Fahrenheit':
+            r = temp + 459.67
+            print('{F} Fahrenheit: {R} Rankine'.format(F = temp, R = r))
+        else:
+            f = temp - 459.67
+            print('{R} Rankine: {F} Fahrenheit'.format(R = temp, F = f))
+    #end of Fahrenheit to Rankine Conversion
+sn()
+#shortcut for return syntax
