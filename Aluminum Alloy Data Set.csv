@@ -1,4 +1,4 @@
-﻿aluminum_alloy,temper,modulus_elastic,modulus_shear,strength_yield,strength_tensile
+﻿aluminum_alloy,temper,m_elastic,m_shear,s_yield,s_tensile
 1100,,10,3.75,3.5,11
 1100,H12,10,3.75,11,14
 2014,,10.8,4,8,22
